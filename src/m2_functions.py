@@ -35,6 +35,7 @@ def main():
 
     turtle1()
     turtle4()
+    turtle5()
     turtle3()
     turtle2()
     turtle2()
@@ -112,6 +113,23 @@ def turtle4():
     steve.right(17)
     steve.forward(200)
     steve.draw_circle(100)
+
+
+def turtle5():
+    bob = rg.SimpleTurtle()
+    bob.pen = rg.Pen('blue4', 5)
+
+    john = rg.SimpleTurtle()
+    john.pen = rg.Pen('dodger blue', 8)
+
+    bob.backward(200)
+    bob.draw_regular_polygon(3, 50)
+
+    john.left(180)
+    john.forward(150)
+    john.begin_fill()
+    john.backward(100)
+    john.end_fill()
 
 
 ########################################################################
@@ -194,7 +212,7 @@ def turtle4():
 
 ########################################################################
 #
-# TODO: 5.
+# Done: 5.
 #   The previous two TODOs IMPLEMENTED a function (TO DO 3)
 #   and TESTED that function (TO DO 4).
 #
